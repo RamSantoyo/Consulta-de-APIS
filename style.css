@@ -1,0 +1,58 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--fuente-principal);
+    font-size: 1.5rem;
+    line-height: 1.5;    
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--fuente-titulo);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 3.6rem;
+}
+h2 {
+    font-size: 3.4rem;
+}
+h3 {
+    font-size: 3.2rem;
+}
+h4 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 2rem;
+}
+
+a {
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+ul, li{    
+    padding-left: 0;
+}
+
+img, picture, video{
+    width: 100%;
+    display: block;
+}
+
+.btn{
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    border-radius: .5rem;
+    cursor: pointer;
+}

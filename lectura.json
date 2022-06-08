@@ -1,0 +1,29 @@
+[
+   {
+      "id": 1,
+      "name": "ramsess",
+      "email": "ramsess@gmail.com",
+      "pass": 123456,
+      "adress":{
+         "city": "Mexico"
+      }
+   },
+   {
+      "id": 2,
+      "name": "miz",
+      "email": "miz@gmail.com",
+      "pass": 123666,
+      "adress":{
+         "city": "Edo mex"
+      }
+   },
+   {
+      "id": 3,
+      "name": "Leonel",
+      "email": "Leonel@gmail.com",
+      "pass": 123996,
+      "adress":{
+         "city": "Madrid"
+      }
+   }
+]
