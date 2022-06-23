@@ -1,4 +1,4 @@
-document.getElementById('jsonbtn').addEventListener('click', llamar)
+document.getElementById('jsonbtn').addEventListener('click', leer)
 
 function buscar(){
     const url =`https://pokeapi.co/api/v2/pokemon/ditto`;
@@ -21,10 +21,16 @@ function llamar(){
 
 function recorrer(){
 
-    for (var i in json) {
+    for (let i in json) {
         console.log(json[i].EVENT_NAME_MANAGE.name)
     }
 
+}
+
+function leer(){
+    Object.entries(json).forEach(([key, value]) => {
+        console.log(key, value)
+    });
 }
 
 let json = {
@@ -37,7 +43,7 @@ let json = {
     "nameTable":"TEST1",
     "EVENT_NAME_MANAGE":{
        "check":false,
-       "name":"EVENT_NAME_MANAGE",
+       "name":"Evento 1",
     }},
    "1":{
     "check":true,
@@ -48,7 +54,7 @@ let json = {
     "nameTable":"TEST2",
     "EVENT_NAME_MANAGE":{
        "check":false,
-       "name":"EVENT_NAME_MANAGE2",
+       "name":"Evento 2",
     }
    }
   };
