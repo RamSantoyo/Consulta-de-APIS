@@ -1,4 +1,4 @@
-document.getElementById('jsonbtn').addEventListener('click', leer)
+document.getElementById('jsonbtn').addEventListener('click', leer3)
 
 function buscar(){
     const url =`https://pokeapi.co/api/v2/pokemon/ditto`;
@@ -18,6 +18,24 @@ function llamar(){
         console.log(data);
      })
 }
+
+function leer2(){
+    Object.keys(json).forEach((key) => {
+        console.log(key, json[key])
+    });
+}
+
+function leer3(){
+    $.getJSON("lectura.json", function(data) {
+        console.log(data);
+        let longitud = data.length;
+        for(let i = 0; i < longitud; i++){
+            console.log(data[i].name);
+        }
+    })
+}
+
+
 
 function recorrer(){
 
